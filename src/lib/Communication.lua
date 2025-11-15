@@ -103,7 +103,7 @@ end
 
 function Module:CreateCommChannel(): (number, BindableEvent)
     --// Use native if it exists
-    local Force = Config.ForceUseCustomComm
+    local Force = Config and Config.ForceUseCustomComm or false
     if create_comm_channel and not Force then
         return create_comm_channel()
     end
@@ -120,7 +120,7 @@ end
 
 function Module:GetCommChannel(ChannelId: number): BindableEvent?
     --// Use native if it exists
-    local Force = Config.ForceUseCustomComm
+    local Force = Config and Config.ForceUseCustomComm or false
     if get_comm_channel and not Force then
         local Channel = get_comm_channel(ChannelId)
         return Channel, false
