@@ -74,8 +74,16 @@ type Log = {
 local SetClipboard = setclipboard or toclipboard or set_clipboard
 
 --// Libraries
-local ReGui = loadstring(game:HttpGet('https://raw.githubusercontent.com/IIIIllll1111IIIIllll1111/Dear-ReGui/refs/heads/main/ReGui.lua'), "ReGui")()
+local ReGuiUrl = 'https://raw.githubusercontent.com/IIIIllll1111IIIIllll1111/Dear-ReGui/refs/heads/main/ReGui.lua'
+local success, result = pcall(function()
+    return loadstring(game:HttpGet(ReGuiUrl))()
+end)
 
+local ReGui = result
+if not success or not ReGui then
+    warn("Sigma Spy Error: 无法加载 ReGui 库，请检查网络或 URL。错误信息: " .. tostring(result))
+    return
+end
 --// Modules
 local Flags
 local Generation
