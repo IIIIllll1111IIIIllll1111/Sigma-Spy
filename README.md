@@ -16,8 +16,8 @@ A complete Remote Spy with an incredible parser that captures incoming and outgo
 ## Socials 💬
 - [Sigma Spy Showcase (Youtube)](https://www.youtube.com/watch?v=Q4VrpE1UfHg) *(Original by depso)*
 - [Dexz00 Repository](https://github.com/Dexz00/Sigma-Spy)
-- [Ababa QQ](230090028)
-- [ncwwcn QQ](1718902864)
+- [Ababa QQ]*(230090028)*
+- [ncwwcn QQ]*(1718902864)*
 - [Discord](Link Expired) *(Original)*
 
 ## Loadstring
